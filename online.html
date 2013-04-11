@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Военная коллегия адвокатов</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="inner.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  </head>
+
+  <body>
+      <div class="header">
+          
+          <ul>
+             <li><a href="">Наши услуги</a></li>
+             <li><a href="">Сотрудники</a></li>
+             <li><a href="">О коллегии</a></li>
+             <li><a href="">Родителям</a></li>
+             <li><a href="">Пресс-центр</a></li>
+             <li><a href="">Информация</a></li>
+             <li><a href="">Форум</a></li>
+             <li><a href="">Контакты</a></li>
+          </ul>
+          
+          <h1>Военная коллегия адвокатов</h1>
+          
+          <div class="phones">
+             <div>
+                <h4>Москва</h4>
+                <b>(495)</b> <span class="first">626-46-42</span>
+             </div>
+             <div>
+                <h4>Санкт-Петербург</h4>
+                <b>(812)</b> <span>320-99-14</span>
+             </div>
+             <h3>Дежурный адвокат</h3>
+             <div>
+                <b>(495)</b> <span class="first">626-46-42</span>
+             </div>
+             <div>
+                <b>(812)</b> <span>320-99-14</span>
+             </div>
+          </div>
+          
+      </div>
+      <div class="blackline-inner inner">
+            <div class="wrapper">
+              <img src="_img/drugoi_chuvak.png">
+              <h3>Легок тот путь,</h3>
+              <h2>который не кажется.</h2>
+            </div>
+      </div>
+            <div class="content">
+                <h1>Запись на посещение офисов online</h1>
+                <h2 class="grey">Уважаемые пользователи сайта!</h2>
+                <p>Для того, чтобы записаться на приём к юристам Военной Коллегии Адвокатов через наш сайт, Вам необходимо заполнить специальную электронную форму.</p>
+                <p class="block-info">Обращаем Ваше внимание на то, что запись on-line доступна только для призывников. Запись на консультацию по вопросам военнослужащих осуществляется по телефонам (495) 626-46-43, (812) 320-99-17</p>
+                <h2 class="form-title">Запись на посещение on-line</h2>
+                <form class="form-online">
+                    <div class="group-control">
+                        <label class="label-control">Цель посещения:</label>
+                        <div class="controls-element">
+                            <div class="styled-select">
+                                <div class="front">
+                                    <div><span id="visit_target-text">Укажите цель Вашего посещения офиса</span>
+                                        <div class="select-bg"></div>
+                                    </div>
+                                </div>
+                                    <select name="visit_target" id="visit_target">
+                                        <option></option>
+                                        <option>цель №1</option>
+                                        <option>цель №2</option>
+                                        <option>цель №3</option>
+                                        <option value="other">Иное (укажите, что именно)</option>
+                                    </select>
+                                    <span id="other-text"><input type="text" name="other-text" value="" class="small"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-control">
+                        <label class="label-control">Отношение к воинской службе:</label>
+                        <div class="controls-element">
+                            <label class="radio inline">
+                                <input type="radio" value="1" checked="checked">
+                                Призывник
+                            </label>
+                            <label class="radio inline">
+                                <input type="radio" value="0">
+                                Военнослужащий
+                            </label>
+                        </div>
+                    </div>
+                    <div class="group-control">
+                        <label class="label-control">Выберите офис в своем городе:</label>
+                        <div class="controls-element">
+                            <label class="radio inline">
+                                <input type="radio" value="1" checked="checked">
+                                <a href="">Москва</a>
+                            </label>
+                            <label class="radio inline">
+                                <input type="radio" value="0">
+                                <a href="">Санкт-Петербург</a>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="group-control">
+                        <label class="label-control">Желаемый день посещения офиса:</label>
+                        <div class="controls-element">
+                            <div class="styled-select small">
+                                <div class="front">
+                                    <div><span id="visit_day-text">Выберите</span>
+                                        <div class="select-bg"></div>
+                                    </div>
+                                </div>
+                                    <select id="visit_day">
+                                        <option></option>
+                                        <option>Прична №1</option>
+                                        <option>Прична №2</option>
+                                        <option>Прична №3</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-control">
+                        <label class="label-control">Желаемое время посещения офиса:</label>
+                        <div class="controls-element">
+                            <div class="styled-select small">
+                                <div class="front">
+                                    <div><span id="visit_time-text">Выберите</span>
+                                        <div class="select-bg"></div>
+                                    </div>
+                                </div>
+                                    <select id="visit_time">
+                                        <option></option>
+                                        <option>Прична №1</option>
+                                        <option>Прична №2</option>
+                                        <option>Прична №3</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-control">
+                        <label class="label-control">Фамилия, имя, отчество:</label>
+                        <div class="controls-element">
+                            <input type="text" name="fio" placeholder="Укажите как Вас зовут">
+                        </div>
+                    </div>
+                    <div class="group-control">
+                        <label class="label-control">Контактный телефон для подтверждения визита:</label>
+                        <div class="controls-element">
+                            <input type="text" name="fio" placeholder="Желательно мобильный">
+                        </div>
+                    </div>
+                    <div class="group-control">
+                        <label class="label-control"></label>
+                        <div class="controls-element">
+                            <input type="submit" value="Отправить">
+                        </div>
+                    </div>
+                </form>
+            </div>
+      <div class="footer">
+           <h4>© Военная коллегия адвокатов 2012</h4>
+           <p><b>Все права защищены.</b> Высококвалифицированная юридическая помощь призывникам в отсрочке от призыва в армию. Освобождение от военного призыва. Полезная информация о весеннем призыве, осенний призыв.</p>
+              
+      </div>
+  <script>
+      $(document).ready(function(){
+          $("select option:selected").each(function(){
+              this.selected = false;
+              $(this).attr('selected','');
+              $(this).removeAttr('selected');
+          });
+
+          $("select").change(function(){
+              var sid = $(this).attr("id"),
+                      lid = "#" + sid + "-text",
+                      text = $(this).find("option:selected").text();
+              $(lid).text(text);
+          });
+      });
+
+  </script>
+  </body>
+</html>

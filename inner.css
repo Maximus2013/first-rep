@@ -1,0 +1,197 @@
+div.blackline-inner2 {background: black url(_img/bg_inner-blackline.png) no-repeat center bottom; position: relative;  color: white;}
+        .inner {height: 157px;}
+        .inner .wrapper {height: 157px;}
+        .wrapper img{position: absolute; bottom: 0; left: 150px;}
+    .blackline-inner h2{font-size: 40px; position: absolute; top: 65px;left: 500px; width: 270px; white-space: nowrap;}
+    .blackline-inner h3{font-size: 29px; position: absolute; top: 35px;left: 450px;}
+h2.grey {color: #777; font-size: 18px; margin-bottom: 20px;}
+.content p {font-size: 16px;}
+p.block-info {border: dashed 1px #C2C2C2; font: italic 16px 'minionproit'; color: #777; padding: 15px 25px;}
+h2.form-title {color: #C91700; font-size: 32px;}
+/* FORM */
+.form-online
+{
+    padding: 20px 0px;
+    margin-bottom: 70px;
+}
+.form-online input, .form-online select {display: inline-block; vertical-align: middle; margin-bottom:0;}
+.form-online .group-control {margin-bottom: 30px;}
+.form-online .label-control {
+    float: left;
+    width: 375px;
+    padding-top: 5px;
+    text-align: right;
+
+}
+.form-online .controls-element
+{
+    margin-left: 405px;
+}
+.form-online .actions-element
+{
+    margin-left: 35px;
+    float: left;
+}
+.controls-element input[type="submit"]
+{
+    float:left;
+}
+.form-online select, .form-online input[type="text"]{padding-right: 0px; width: 362px;}
+.group-control .information
+{
+    display: block;
+    padding: 10px 0px;
+    font-size: 16px;
+}
+.information p{padding: 10px 0px;margin-bottom: 0px;}
+
+.radio.inline, .checkbox.inline {
+    display: inline-block;
+    padding-top: 5px;
+    margin-bottom: 0;
+    line-height: 20px;
+    padding-right: 10px;
+}
+.radio input[type="radio"], .checkbox input[type="checkbox"] {
+    float: left;
+}
+/* STYLED SELECT */
+
+.styled-select {
+    /*width: 422px;
+    height: 28px;
+    overflow: hidden;
+    background: url(_img/new_arrow.png) no-repeat right;
+    border: 1px solid #999;*/
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+}
+.front {
+    top: 0;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    font-size: 16px;
+}
+.front div {
+    background: url('_img/bg_input.png') repeat-x;
+    border: 1px solid #999;
+    height: 28px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 345px;
+    padding-left: 15px;
+    color: #777;
+}
+.front .select-bg
+{
+    position: absolute;
+    background: url(_img/new_arrow.png) no-repeat top right;
+    top: 1px;
+    border: none;
+    padding:0px;
+}
+.small .front div {
+    background: url('_img/bg_input.png') repeat-x;
+    border: 1px solid #999;
+    height: 28px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 110px;
+    padding-left: 15px;
+}
+.small .front .select-bg
+{
+    position: absolute;
+    background: url(_img/new_arrow.png) no-repeat top right;
+    top: 1px;
+    border: none;
+    padding:0px;
+}
+select {
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    color: black;
+}
+.small select, .small .front
+ {
+     width: 127px;
+ }
+.styled-select select option:first-child
+{
+    display: none;
+}
+/*.styled-select .select-bg,.select-bg div
+{
+    background: url(_img/bg_input.png) repeat-x;
+    width: 394px;
+    height:28px;
+}
+.styled-select select {
+    background: transparent;
+    width: 445px;
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+    padding: 3px 6px;
+    clip:rect(2px 422px 28px 2px);
+    position: absolute;
+}
+.styled-select select option
+{
+    color: black;
+    padding-left: 7px;
+}
+.styled-select select option:first-child
+{
+    color: #777;
+    background: transparent;
+}
+.styled-select.small
+{
+    width: 122px;
+}
+.styled-select.small select
+{
+    width: 150px;
+    clip:rect(2px 122px 28px 2px);
+}
+.styled-select.small .select-bg
+{
+    width: 94px;
+}*/
+label a
+{
+    font: 21px 'oranienbaumregular';
+    color: #C11904;
+    padding: 0 5px;
+}
+.card{margin-bottom: 60px;}
+.foto {border: solid 1px #EEEEEE; width: 258px;padding:20px;float:left;margin-right:40px;}
+.info{margin-left: 340px;border:solid 0px green;}
+.card h2 {font: 32px "oranienbaumregular"; }
+.info .subtitle {font: 18px "oranienbaumregular"; color: #C91703; margin-bottom: 30px; display: block;}
+.ask-question{background: url(_img/bg_dualline.png) no-repeat left top; line-height: 60px;padding-top: 16px;}
+.ask-question a {font: 24px "oranienbaumregular";color: #C91702;padding: 15px 0px 0px 0px;border-bottom: dashed 1px #C91702;text-decoration: none;}
+.ask-question: hover {border-bottom: none;}
+
+/*DELETE
+.main-select {
+    display: inline-block;
+    height: 29px;
+    line-height: 29px;
+    position: relative;
+}
+
+
+
+
+.front .styled-select-arrow
+{
+    position: absolute;
+    background: url(_img/new_arrow.png) no-repeat top right;
+    top: 1px;
+}*/

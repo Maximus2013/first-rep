@@ -1,0 +1,158 @@
+html, body, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, p, blockquote, form, fieldset, legend, table, td, th {margin: 0; padding: 0;}
+html, body { height: 100%; }
+body { background: white; color: #000000; font: normal 18px 'minionproregular', 'Georgia', serif; line-height: 20px;}
+img {border: 0 none;}
+a {text-decoration: underline; color: black;}
+a:hover {color: #CF0F0B;}
+
+@font-face {
+    font-family: 'oranienbaumregular';
+    src: url('_fonts/oranienbaum-webfont.eot');
+    src: url('_fonts/oranienbaum-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/oranienbaum-webfont.woff') format('woff'),
+         url('_fonts/oranienbaum-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'minionproregular';
+    src: url('_fonts/MinionPro-Regular.eot');
+    src: url('_fonts/MinionPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/MinionPro-Regular.woff') format('woff'),
+         url('_fonts/MinionPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'minionprobold';
+    src: url('_fonts/MinionPro-Bold.eot');
+    src: url('_fonts/MinionPro-Bold.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/MinionPro-Bold.woff') format('woff'),
+         url('_fonts/MinionPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'minionproit';
+    src: url('_fonts/MinionPro-It.eot');
+    src: url('_fonts/MinionPro-It.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/MinionPro-It.woff') format('woff'),
+         url('_fonts/MinionPro-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+h1, h2, h3, h4, h5, h6 { font-family: 'oranienbaumregular', 'Georgia', serif; font-weight: normal;}
+h1{ font-size: 24px; margin: 10px -15px 25px; background: url(_img/bg_dualline.png) no-repeat left bottom; line-height: 60px; clear: both;}
+h3{ font-size: 24px; margin: 25px 0;}
+h4{ font-size: 20px; margin: auto 0;}
+
+input[type="text"], input[type="password"], textarea, select { font: normal 16px 'minionproregular', 'Georgia', serif; margin-bottom: 25px; display: block; width: 400px; border: 1px solid #999; background: white url(_img/bg_input.png) repeat-x top left; padding: 0 10px; color: #777; height: 30px;}
+textarea {height: 120px; background: url(../_img/bg_textarea.png) no-repeat top left;}
+input[type="submit"]{ border: 0; background: url(_img/bg_btn.png) repeat-x 0 0; 
+    cursor: pointer;
+    color: white;
+    font: normal 20px 'minionproregular', 'Georgia', serif;
+    float: right;
+    padding: 2px 20px 7px;
+        }
+input[type="submit"]:hover { background: url(_img/bg_btn_hover.png) repeat-x 0 0;}    
+table td, table th {vertical-align: top;}
+blockquote {background: #EAEAEA url(_img/bg_blockquote.png) no-repeat left top; font-size: 16px; padding: 30px 20px 10px;}
+div.wrapper {width: 1000px; margin: 0 auto; position: relative;}
+   
+
+div.header {width: 1000px; margin: 0 auto; position: relative;}
+div.header > ul{list-style-type: none; background: url(_img/bg_menu.png) no-repeat left bottom; text-align: justify; margin: 25px 0 0 0; height: 40px; vertical-align: top;}
+   .header > ul:after {content: ""; display: inline-block; height: 0; overflow: hidden; visibility: hidden; width: 100%;}
+   .header > ul li{display: inline-block;}
+   .header > ul li a{font-size: 20px; font-family: 'oranienbaumregular', 'Georgia', serif; text-decoration: none; height: 40px; display: block;  padding: 0 8px; }
+   .header > ul li a:hover{background: url(_img/bg_menu_hover.png) no-repeat center bottom; border-left: 4px solid white; border-right: 4px solid white; padding: 0 4px;}
+   .header > ul li:first-child a:hover{border-left:none; padding:0 4px 0 8px; }
+   .header > ul li:last-child a:hover{border-right:none; padding:0 8px 0 4px; }
+   .header > h1 {background: url(_img/logo_gvka.png) no-repeat left top; text-indent: -3000px; width: 163px; height: 108px; margin:40px 0;}
+   .header .phones { position: absolute; top: 60px; right: 8px; }
+   .header .phones h4{ color: #C11904; font-size: 22px;}
+   .header .phones h3{ font-size: 16px; text-align: center; line-height: 38px; margin: 0;}
+   .header .phones div {display: inline-block; vertical-align: top; font-size: 22px; margin-left: 35px;}
+   .header .phones b {color: #777; font-size: 16px; font-weight: normal;}
+   .header .phones span.first {border-right: 1px solid #ddd; padding-right: 35px;}
+   
+div.blackline {background: black url(_img/bg_blackline.png) no-repeat center bottom; position: relative;  color: white;}
+              .index {height: 355px;}
+              .index .wrapper {height: 355px;}
+              .wrapper img{position: absolute; bottom: 0; left: 150px;}
+              
+   .blackline blockquote{font-style: italic; border: none; font: italic 24px 'minionproit', 'Georgia', serif; background: none; width: 580px; position: absolute; top: 20px; left: 350px;}
+   .blackline p{font: normal 48px 'minionprobold', 'Georgia', serif; position: absolute; top: 180px; left: 650px;}
+   .blackline h4{font-size: 28px; position: absolute; top: 230px; left: 700px; width: 270px; white-space: nowrap;}
+   .blackline h5{font-size: 18px; position: absolute; top: 260px; left: 912px; width: 75px; background: url(_img/subline.png) no-repeat left bottom; line-height: 34px;}                  
+   
+div.content { text-align: justify; clear: both; width: 970px; margin: 0 auto; padding: 0 15px 30px;}
+   .content p {margin-bottom: 25px;}
+            p.date {color: #666;}
+            p.date:after, p.date:before {content: "/"; font-size: 35px;}
+            p.date:after {padding-left: 10px;}
+            p.date:before {padding-right: 10px;}
+   .content h1:first-child{ background: url(_img/bg_h1.png) no-repeat left bottom;}
+   
+   .content .banner {float: right; clear: right; width: 260px; height: 440px; overflow: hidden; margin-left: 30px;}
+            .sozial {text-align: justify; width: 210px;  background: url(_img/bg_dualline.png) no-repeat left top; margin: 0 auto; padding-top: 20px;}
+            .nobanner{margin: 0;}
+            .sozial:after {content: ""; display: inline-block; height: 0; overflow: hidden; visibility: hidden; width: 100%;}
+            
+            .sovet { height: 48px; padding: 15px 20px; width: 662px; background: url(_img/bg_sovet.png) no-repeat left top; margin-left: -15px; display: inline-block;}
+            .sovet label{color: #CC100B; line-height: 25px;display: inline-block; vertical-align: top; font: normal 40px/22px 'minionprobold', 'Georgia', serif;}
+            .sovet label p{color: black; font: normal 20px/24px 'minionproregular', 'Georgia', serif;}
+            .sovet input[type="text"] {width: 210px; display: inline-block; color: black; text-align: center; margin: 8px;}
+            .sovet input[type="submit"] { margin-top: 5px;}
+            
+            .forumbtn {color: #CE0E0B; font-size: 22px; text-align: center; display: inline-block; width: 275px;}
+            .forumbtn span{color: black; font-size: 16px; margin: 0; }
+   .content .forumbtn p{margin: 0;}
+            .forumbtn a{color: white; font: normal 22px 'minionprobold', 'Georgia', serif; display: block; margin: 0 auto; text-decoration: none;  width: 175px; line-height: 72px; background: url(_img/btn_forum.png) no-repeat left top;}
+            
+            .video {float: left; width: 640px; display: inline-block; }
+            .morevideo { margin-left: 30px; display: inline-block; width: 300px; overflow: hidden;}
+
+            .article {display: block; font-size: 16px; clear: both; margin-bottom: 20px; min-height: 100px; text-align: left; vertical-align: top;}
+   .content .article p{color:#666; margin: 0;}
+            .article img{float: left; margin-right: 15px; vertical-align: top;}
+
+            .logos {text-align: justify;}
+            .logos:after{content: ""; display: inline-block; height: 0; overflow: hidden; visibility: hidden; width: 100%;}
+            .logos a{display: inline-block; vertical-align: top; width: 75px; height: 75px; background-repeat: no-repeat; background-position: center top; background-repeat: no-repeat;}
+            .logos a:hover {background-position: left bottom!important;}
+                  a#pk {background: url('_img/logo_5k.png') no-repeat;}
+                  a#ntv {background: url('_img/logo_ntv.png') no-repeat;}
+                  a#rex {background: url('_img/logo_rex.png') no-repeat;}
+                  a#dr {background: url('_img/logo_dr.png') no-repeat;}
+                  a#rg {background: url('_img/logo_rg.png') no-repeat; width: 150px;}
+                  a#rsn {background: url('_img/logo_rsn.png') no-repeat;}
+                  a#moskvad {background: url('_img/logo_moskvad.png') no-repeat; width: 150px;}
+ 
+div.footer { width: 970px; padding: 5px 15px; margin: 0 auto; clear: both; position: relative; height: 130px; background: url(_img/bg_dualline.png) no-repeat left top;}
+   .footer h4{ font-size: 20px; font-family: 'minionproregular', 'Georgia', serif; font-weight: normal; line-height: 35px;}
+   .footer p{ font-size: 16px; color: #999; margin-left: 18px;}
+   .footer b{ color: black;}
+
+/*IE7 fucking hack*/
+*:first-child+html .header > ul li{float: left; margin-left: 18px;}
+*:first-child+html .header .phones div {float: left; vertical-align: top; font-size: 22px; margin-left: 35px;}
+*:first-child+html .header .phones h3{clear: both;}
+*:first-child+html .sovet {float: left; padding-top: 0; height: 76px; margin-top: 30px;}
+*:first-child+html .sovet label{float: left;}
+*:first-child+html .sovet p{line-height: 48px;}
+*:first-child+html .sovet input[type="text"] {float: left; width: 140px; margin-top: 25px;}
+*:first-child+html .sovet input[type="submit"] { margin-top: 23px;}
+*:first-child+html .logos a { width: 134px;}
