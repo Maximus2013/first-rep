@@ -12,14 +12,14 @@
       <div class="header">
           
           <ul>
-              <li><a href="" id="our_services">Наши услуги</a></li>
-              <li><a href="" id="persons">Сотрудники</a></li>
-              <li><a href="" id="kollegii">О коллегии</a></li>
-              <li><a href="" id="parents">Родителям</a></li>
-              <li><a href="" id="press-centr">Пресс-центр</a></li>
-              <li><a href="" id="information">Информация</a></li>
-              <li><a href="" id="forum">Форум</a></li>
-              <li><a href="" id="contucts">Контакты</a></li>
+             <li><a href="">Наши услуги</a></li>
+             <li><a href="">Сотрудники</a></li>
+             <li><a href="">О коллегии</a></li>
+             <li><a href="">Родителям</a></li>
+             <li><a href="">Пресс-центр</a></li>
+             <li><a href="">Информация</a></li>
+             <li><a href="">Форум</a></li>
+             <li><a href="">Контакты</a></li>
           </ul>
           
           <h1>Военная коллегия адвокатов</h1>
@@ -73,7 +73,7 @@
                                         <option>цель №3</option>
                                         <option value="other">Иное (укажите, что именно)</option>
                                     </select>
-                                    <span id="other-text"><input type="text" name="other-text" value="" class="medium" id="input-other-text"></span>
+                                    <span id="other-text"><input type="text" name="other-text" value="" class="small"></span>
                             </div>
                         </div>
                     </div>
@@ -177,20 +177,6 @@
                       lid = "#" + sid + "-text",
                       text = $(this).find("option:selected").text();
               $(lid).text(text);
-          });
-          $("#visit_target").change(function(){
-              console.log($("#visit_target :selected").val());
-              console.log(this.selectedIndex);
-              console.log(this.options.length);
-              if (this.options.length - 1 == this.selectedIndex)
-              {
-                  $("#other-text").fadeIn();
-              }
-              else
-              {
-                  $("#other-text").fadeOut();
-                  $("#input-other-text").val('');
-              }
           });
       });
 

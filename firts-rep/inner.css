@@ -7,7 +7,7 @@ div.blackline-inner2 {background: black url(_img/bg_inner-blackline.png) no-repe
 h2.grey {color: #777; font-size: 18px; margin-bottom: 20px;}
 .content p {font-size: 16px;}
 p.block-info {border: dashed 1px #C2C2C2; font: italic 16px 'minionproit'; color: #777; padding: 15px 25px;}
-h2.form-title {color: #C91700; font-size: 32px; line-height: 60px;}
+h2.form-title {color: #C91700; font-size: 32px;}
 /* FORM */
 .form-online
 {
@@ -124,19 +124,6 @@ select {
 {
     display: none;
 }
-#other-text
-{
-    width:50px;
-    display: inline-block;
-    padding-left: 10px;
-    display: none;
-}
-input[type="text"].medium
-{
-    width: 175px;
-    height: 28px;
-    margin-top: -1px;
-}
 /*.styled-select .select-bg,.select-bg div
 {
     background: url(_img/bg_input.png) repeat-x;
@@ -190,25 +177,7 @@ label a
 .ask-question{background: url(_img/bg_dualline.png) no-repeat left top; line-height: 60px;padding-top: 16px;}
 .ask-question a {font: 24px "oranienbaumregular";color: #C91702;padding: 15px 0px 0px 0px;border-bottom: dashed 1px #C91702;text-decoration: none;}
 .ask-question: hover {border-bottom: none;}
-ul.menu li  a
-{
-    font-size: 20px;
-    font-family: "oranienbaumregular";
-    color: #C91702;
-    border-bottom: dashed 1px #C91702;
-    text-decoration: none;
-    height: 40px;
-    line-height: 50px;
-}
-ul.menu li  a.black
-{
-    color: black;
-    border-bottom: dashed 1px black;
-}
-ul.menu li.no-style
-{
-    list-style-type: none;
-}
+
 /*DELETE
 .main-select {
     display: inline-block;
@@ -226,41 +195,3 @@ ul.menu li.no-style
     background: url(_img/new_arrow.png) no-repeat top right;
     top: 1px;
 }*/
-.h1
-{
-    font-family: 'minionproit';
-}
-
-p.date.clear:after, p.date.clear:before
-{
-    content: "";
-}
-.file > a
-{
-    font-size: 24px;
-}
-.table-content
-{
-    width: auto;
-    display: none;
-}
-.table-content div
-{
-    padding: 5px;
-}
-.left-cell
-{
-    width:38%;height:30px;display:inline-block;
-    font-weight: bold;
-}
-.other-cells
-{
-    width:28%;height:30px;display:inline-block;
-    font-weight: bold;
-    margin-left: 7px;
-}
-.cell
-{
-    font-weight: normal;
-    font-size: 16px;
-}

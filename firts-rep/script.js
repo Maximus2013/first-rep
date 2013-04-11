@@ -1,5 +1,6 @@
 (function($) {
     //jQuery.fn.responsiveBlock = function(options){
+
         var options = {
             defColor : "white",
             hoverColor : "red"
@@ -40,39 +41,5 @@
             $.error( 'Метод "' +  method + '" не найден в плагине jQuery.mySimplePlugin' );
         }
     };
-
 })(jQuery);
-$(document).ready(function(){
-    var links = [
-        {'id' : 'index','link' : 'index.html'},
-        {'id' : 'persons','link' : 'pers.html'},
-        {'id' : 'kollegii','link' : 'index.html'},
-        {'id' : 'parents','link' : 'parents.html'},
-        {'id' : 'press-centr','link' : 'press-centr.html'},
-        {'id' : 'zakon','link' : 'z1.html'},
-        {'id' : 'information','link' : 'information.html'},
-        {'id' : 'contucts','link' : 'contucts.html'},
-        {'id' : 'our_services','link' : 'services.html'}
-    ];
-    $(links).each(function(n,el){
-//        console.log($("#"+el.id).attr('href',el.link));
-
-    });
-    $("ul.menu li a").click(function(){
-        var table = $(this).parent().next().children('div:first'),
-            vis = $(table).is(':visible');
-        console.log($(table).is(':visible'));
-        if (vis)
-        {
-            $(table).slideUp();
-            $(this).removeClass("black");
-        }
-        else
-        {
-            $(table).slideDown();
-            $(this).addClass("black");
-        }
-        //console.log(el.fadeOut());
-    });
-});
 //$('#hover-div').responsiveBlock('make');
