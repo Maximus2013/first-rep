@@ -65,6 +65,9 @@ input[type="submit"]{ border: 0; background: url(_img/bg_btn.png) repeat-x 0 0;
     font: normal 20px 'minionproregular', 'Georgia', serif;
     float: right;
     padding: 2px 20px 7px;
+    /*padding: 0px 20px;
+    line-height: 36px;
+    height: 36px;*/
         }
 input[type="submit"]:hover { background: url(_img/bg_btn_hover.png) repeat-x 0 0;}    
 table td, table th {vertical-align: top;}

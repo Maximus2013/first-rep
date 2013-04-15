@@ -48,20 +48,26 @@ $(document).ready(function(){
         {'id' : 'persons','link' : 'pers.html'},
         {'id' : 'kollegii','link' : 'index.html'},
         {'id' : 'parents','link' : 'parents.html'},
-        {'id' : 'press-centr','link' : 'press-centr.html'},
+        {'id' : 'press-centr','link' : 'pressa.html'},
+        //{'id' : 'press-centr2','link' : 'pressa.html'},
         {'id' : 'zakon','link' : 'z1.html'},
-        {'id' : 'information','link' : 'information.html'},
-        {'id' : 'contucts','link' : 'contucts.html'},
-        {'id' : 'our_services','link' : 'services.html'}
+        {'id' : 'information','link' : 'z2.html'},
+        {'id' : 'contucts','link' : 'contacts.html'},
+        {'id' : 'our_services','link' : 'services.html'},
+        {'id' : 'service-3','link' : 'service-3.html'},
+        {'id' : 'backcall','link' : 'backcall.html'},
+        {'id' : 'visit','link' : 'online.html'},
+        {'id' : 'z1','link' : 'z1.html'},
+        {'id' : 'z2','link' : 'z2.html'},
+        {'id' : 'press-inner','link' : 'press-inner1.html'},
+        {'id' : 'press-tv','link' : 'press-tv.html'}
     ];
     $(links).each(function(n,el){
-//        console.log($("#"+el.id).attr('href',el.link));
-
+        $("a[id^='"+el.id+"']").attr('href',el.link);
     });
     $("ul.menu li a").click(function(){
         var table = $(this).parent().next().children('div:first'),
             vis = $(table).is(':visible');
-        console.log($(table).is(':visible'));
         if (vis)
         {
             $(table).slideUp();
@@ -72,7 +78,28 @@ $(document).ready(function(){
             $(table).slideDown();
             $(this).addClass("black");
         }
-        //console.log(el.fadeOut());
     });
 });
 //$('#hover-div').responsiveBlock('make');
+function toggleActiveNextControlGroup(selector,active)
+{
+    //находим родительский control-group
+    ctr = $(selector).parent().parent().parent();
+    ctr2 = $(selector).parent().parent();
+    if (active)
+    {
+        $(selector).removeAttr('disabled');
+        $(selector).removeClass('disabled');
+        //делаем активным
+        $(ctr).removeClass('disabled');
+        $(ctr2).removeClass('disabled');
+    }
+    else
+    {
+        $(selector).attr('disabled','disabled');
+        $(selector).addClass('disabled');
+        //делаем НЕ активным
+        $(ctr).addClass('disabled');
+        $(ctr2).addClass('disabled');
+    }
+}

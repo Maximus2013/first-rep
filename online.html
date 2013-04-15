@@ -6,6 +6,9 @@
     <link href="main.css" rel="stylesheet" type="text/css" />
     <link href="inner.css" rel="stylesheet" type="text/css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="jquery.grewform.js"></script>
+    <script src="online.grewform.js"></script>
   </head>
 
   <body>
@@ -56,7 +59,7 @@
                 <p>Для того, чтобы записаться на приём к юристам Военной Коллегии Адвокатов через наш сайт, Вам необходимо заполнить специальную электронную форму.</p>
                 <p class="block-info">Обращаем Ваше внимание на то, что запись on-line доступна только для призывников. Запись на консультацию по вопросам военнослужащих осуществляется по телефонам (495) 626-46-43, (812) 320-99-17</p>
                 <h2 class="form-title">Запись на посещение on-line</h2>
-                <form class="form-online">
+                <form class="form-online" id="visit-online">
                     <div class="group-control">
                         <label class="label-control">Цель посещения:</label>
                         <div class="controls-element">
@@ -81,11 +84,11 @@
                         <label class="label-control">Отношение к воинской службе:</label>
                         <div class="controls-element">
                             <label class="radio inline">
-                                <input type="radio" value="1" checked="checked">
+                                <input type="radio" value="1" name="type_relation" id="type-relation-1">
                                 Призывник
                             </label>
                             <label class="radio inline">
-                                <input type="radio" value="0">
+                                <input type="radio" value="0" name="type_relation" id="type-relation-2">
                                 Военнослужащий
                             </label>
                         </div>
@@ -94,11 +97,11 @@
                         <label class="label-control">Выберите офис в своем городе:</label>
                         <div class="controls-element">
                             <label class="radio inline">
-                                <input type="radio" value="1" checked="checked">
+                                <input type="radio" value="1" name="choose_office" id="choose_office-1">
                                 <a href="">Москва</a>
                             </label>
                             <label class="radio inline">
-                                <input type="radio" value="0">
+                                <input type="radio" value="0" name="choose_office" id="choose_office-2">
                                 <a href="">Санкт-Петербург</a>
                             </label>
                         </div>
@@ -148,13 +151,13 @@
                     <div class="group-control">
                         <label class="label-control">Контактный телефон для подтверждения визита:</label>
                         <div class="controls-element">
-                            <input type="text" name="fio" placeholder="Желательно мобильный">
+                            <input type="text" name="phone" id="phone" placeholder="Желательно мобильный" id="contuct_phone">
                         </div>
                     </div>
                     <div class="group-control">
                         <label class="label-control"></label>
                         <div class="controls-element">
-                            <input type="submit" value="Отправить">
+                            <input type="submit" value="Отправить" id="idSubmit">
                         </div>
                     </div>
                 </form>
@@ -178,21 +181,27 @@
                       text = $(this).find("option:selected").text();
               $(lid).text(text);
           });
-          $("#visit_target").change(function(){
-              console.log($("#visit_target :selected").val());
-              console.log(this.selectedIndex);
-              console.log(this.options.length);
-              if (this.options.length - 1 == this.selectedIndex)
+
+          setInterval(function(){
+              var curVal = $("#input-other-text").val();
+              var prevVal  = '' || null;
+
+              if ($("#input-other-text").attr('disabled') == undefined)
               {
-                  $("#other-text").fadeIn();
+                  if (curVal.length) {
+                      //$('#type-relation-1,#type-relation-2').removeAttr('disabled');
+                      toggleActiveNextControlGroup('#type-relation-1,#type-relation-2',true);
+                  }
+                  else
+                  {
+                      //$('#type-relation-1,#type-relation-2').attr('disabled','disabled');
+                      toggleActiveNextControlGroup('#type-relation-1,#type-relation-2',false);
+                  }
               }
-              else
-              {
-                  $("#other-text").fadeOut();
-                  $("#input-other-text").val('');
-              }
-          });
+
+          }, 100)
       });
+
 
   </script>
   </body>
